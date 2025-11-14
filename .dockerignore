@@ -1,0 +1,87 @@
+# Docker ignore for Python / FastAPI project
+
+# Environment files
+.env
+
+# Python bytecode and caches
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+pip-wheel-metadata/
+*.egg
+*.whl
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+__pypackages__/
+
+# IDE/editor configs
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Test / coverage
+.pytest_cache/
+.mypy_cache/
+.tox/
+.coverage
+.coverage.*
+coverage.xml
+htmlcov/
+
+# Logs and temporary files
+*.log
+logs/
+tmp/
+*.pid
+
+# Docker-related
+Dockerfile.*
+docker-compose*.yml
+
+# Git
+.git/
+.gitignore
+
+# Secrets / keys
+*.pem
+*.key
+.secrets/
+aws-credentials
+credentials
+
+# Databases
+*.sqlite3
+*.db
+
+# Node
+node_modules/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Misc
+*.pyc
+*.pyo
+*.pyd
+*.class
+
