@@ -107,6 +107,7 @@ def call_groq(prompt: str, timeout: int = 30) -> str:
                 "You are an assistant that answers questions using only the provided document excerpts. "
                 "If the information is not present, say you don't know. Provide concise answers"
                 "Must be proper pointwise line by line must looks like proper format and not random text and unwanted characters."
+                "Do not provide any refrences and citations if not required only clean answers. not characters like *, -, >, etc"
             ),
         },
         {"role": "user", "content": prompt},
