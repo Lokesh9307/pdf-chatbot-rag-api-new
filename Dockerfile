@@ -1,8 +1,8 @@
 FROM python:3.11-slim
 WORKDIR /app
-COPY app/requirements.txt ./requirements.txt
+COPY requirements.txt ./requirements.txt
 RUN apt-get update && apt-get install -y build-essential libpoppler-cpp-dev pkg-config python3-dev && rm -rf /var/lib/apt/lists/*
-RUN pip install --no-cache-dir -r app/requirements.txt
+RUN pip install --no-cache-dir -r requirements.txt
 COPY app ./app
 ENV RAG_DB_PATH=/app/data/rag.db
 ENV UPLOAD_DIR=/app/data/uploads
